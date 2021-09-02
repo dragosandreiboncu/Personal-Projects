@@ -14,13 +14,15 @@ catre host prin comanda send_to_server. Primeste un mesaj prin receive_from_serv
 	-Login: Asemanator cu register doar ca raspunsul este de 3 tipuri, "Credentials are not good" cand parola introdusa este gresita, "No account 
 with this username" cand nu a fost inregistrat un cont cu username-ul respectiv, sau logarea a avut loc cu succes si primim un cookie, un cod de reprezinta 
 faptul ca utilizatorul este logat.
-	-Logout: In cazul in care acest cookie este NULL, rezulta ca utilizatorul nu este logat cu nici un cont, iar delogarea este in zadar. Altfel, cookie-ul devine 
-NULL si se trimite un request catre server pentru delogare
+	-Logout: In cazul in care acest cookie este NULL, rezulta ca utilizatorul nu este logat cu nici un cont, iar delogarea este in zadar. Altfel, cookie-ul 
+devine NULL si se trimite un request catre server pentru delogare
 	-Enter_library: Daca utilizatorul este logat, pentru accesul la  biblioteca, este nevoie de un token specific fiecarei sesiuni de logare. Aceasta 
 comanda ofera un cod ce reprezinta tokenul, ce este necesar fiecarei comenzi aplicate bibliotecii. Poate fii folosit si pe post de cookie, pentru a verifica 
 daca utilizatorul este logat, deoarece, la delogare, si tokenul va deveni NULL.
 	-Get_books: Trimite un request catre server pentru a afisa o lista cu toate cartile din biblioteca
-	-Get_book: In cazul in care dorim sa aflam informatii despre o anumite carte, introducem un id valid si vom trimite un request catre url-ul cartii respective.
-	-Add_book: Primeste informatii despre carte, testeaza corectitudinea acestora si trimite un request de tip POST catre server pentru a actualiza baza de date.
+	-Get_book: In cazul in care dorim sa aflam informatii despre o anumite carte, introducem un id valid si vom trimite un request catre url-ul cartii 
+respective.
+	-Add_book: Primeste informatii despre carte, testeaza corectitudinea acestora si trimite un request de tip POST catre server pentru a actualiza baza de 
+date.
 	-Delete_book: Asemanatorul cu get_book, solicita un request de DELETE pentru un id de carte valid.
 	-Exit: inchide socketul si termina programul
