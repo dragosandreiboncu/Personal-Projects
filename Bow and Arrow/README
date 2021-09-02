@@ -1,0 +1,6 @@
+	Joc Shooter 2D cu arcul unde tintele sunt baloane si 
+shurikeni. Jocul se bazeaza pe elemente de grafica, coordonate
+ale punctelor exprimate in vectori, operatii pe vectori, etc.
+De asemenea, la nivelul obiectelor(sageti, baloane, shuriken) se
+gasesc animatii. Pentru doborarea tintelor se acord scor, iar jocul
+se termina dupa pierderea celor 3 vieti.
