@@ -1,43 +1,36 @@
 # Producer:
-	Initial fiecare producator va primi un id de tip intreg prin functia
-din marketplace, register_producer
-	Pentru fiecare element din lista de produse primita ca parametru in
-constructor, se itereaza de x ori(x - cantitatea fiecarui produs) publicarea
-acestui produs, apelandu-se functia din marketplace, publish. Boolean-ul intors
-de functie decide daca functia va intra pe un loop(False), unde va reincerca 
+	Initial fiecare producator va primi un id de tip intreg prin functia din marketplace, register_producer
+	Pentru fiecare element din lista de produse primita ca parametru in constructor, se itereaza de x ori(x - cantitatea fiecarui produs) publicarea
+acestui produs, apelandu-se functia din marketplace, publish. Boolean-ul intors de functie decide daca functia va intra pe un loop(False), unde va reincerca 
 dupa un timp publicarea produsului, ori va astepta un timp si va trece la urmatorul.
 
 
 # Consumer:
-	Initial fiecare consumator, la intrarea in magazin, va primi un cos gol cu ajutorul
-functiei new_cart
-	Pentru fiecare element de pe lista de cumparaturi din self.cars, consumatorul 
-va incerca adaugarea lui in cos prin intermediul functiei din marketplace, add_to_cart,
-ori se va razgandi, si il va pune la loc pe raft, apeland functia remove_from_cart.
-	La final, va primi o "chitanta" prin functia place_order, si va afisa toate produsele
-cumparate, adica toate produsele din cos.
+	Initial fiecare consumator, la intrarea in magazin, va primi un cos gol cu ajutorul functiei new_cart
+	Pentru fiecare element de pe lista de cumparaturi din self.cars, consumatorul va incerca adaugarea lui in cos prin intermediul functiei 
+din marketplace, add_to_cart, ori se va razgandi, si il va pune la loc pe raft, apeland functia remove_from_cart.
+	La final, va primi o "chitanta" prin functia place_order, si va afisa toate produsele cumparate, adica toate produsele din cos.
 
 
 # Marketplace:
-	Am folosit 2 lock-uri, unul pentru producatori, altul pentru consumatori, pe care
-le-am folosit la operatiile pe variabile(fie din liste, fie din afara) in functie de
-thread-urile ce le apeleaza(register_producer este accesat de producatori deci am folosit
-prod_mutex).
+	Am folosit 2 lock-uri, unul pentru producatori, altul pentru consumatori, pe care le-am folosit la operatiile pe variabile(fie din liste, 
+fie din afara) in functie de thread-urile ce le apeleaza(register_producer este accesat de producatori deci am folosit prod_mutex).
+
 *register_producer
-	in ordinea in care vin, fiecare thread va primi un id de tip intreg,
-numarul de producatori este actualizat, iar counter-ul de produse pe piata este initializat
-cu 0 pentru producatorul respectiv.
+	in ordinea in care vin, fiecare thread va primi un id de tip intreg, numarul de producatori este actualizat, iar counter-ul de produse pe 
+piata este initializat cu 0 pentru producatorul respectiv.
+
 *publish
-	se verifica daca producatorul respectiv a depasit limita de produse distribuite impusa
-cu variabila din constructorul marketplace-ului, si daca este posibil, se adauga o pereche
-de 2 elemente(produs, id-ul producatorului) intr-o lista generala. De asemenea, este
-incrementat counter-ul pentru limita producatorului.
+	se verifica daca producatorul respectiv a depasit limita de produse distribuite impusa cu variabila din constructorul marketplace-ului, 
+si daca este posibil, se adauga o pereche de 2 elemente(produs, id-ul producatorului) intr-o lista generala. De asemenea, este incrementat counter-ul 
+pentru limita producatorului.
+
 *new_cart
-	asemanator cu register_producer, consumatorul primeste, un cos gol inregistrat cu un id
-anume si numarul de consumatori este actualizat.
+	asemanator cu register_producer, consumatorul primeste, un cos gol inregistrat cu un id anume si numarul de consumatori este actualizat.
+
 *add_to_cart
-	se cauta produsul in lista market-ului, si daca este gasit, perechea este scoasa de pe
-raftul market-ului si este pusa in cos-ul cu id-ul dat ca argument.
+	se cauta produsul in lista market-ului, si daca este gasit, perechea este scoasa de pe raftul market-ului si este pusa in cos-ul cu id-ul 
+dat ca argument.
+
 *remove_from_cart
-	opusul functiei add_to_cart, se cauta produsul in cos, si daca este gasit, perechea este
-eliminata din lista cosului, si readaugata inapoi pe raft.
+	opusul functiei add_to_cart, se cauta produsul in cos, si daca este gasit, perechea este eliminata din lista cosului, si readaugata inapoi pe raft.
