@@ -1,0 +1,20 @@
+# clustering_pc:
+	Prin primele 3 linii de cod vom alege NC centroizi random.
+	Initializam o noua functie "Grupari" ( pentru a o repeta mai jos)
+			   prin care separam punctele in cele NC grupe:
+	Functia "Grupari" returneaza "indici" ce este o matrice de 1 coloana si
+cate o linie pt fiecare punct din points. Pe linia respectiva se afla un
+nr de la 1 la NC, ce va reprezenta "centroidul-tata".
+	In "Grupari" pentru a face separarile calculam distantele la toti centroizii
+si o selectam pe cea mai mica.
+	Urmatoarea functie "CentroiziNoi" va calcula centrul de masa.
+	Cu un for, mergem prin fiecare multime de puncte si calculam PCI, o matrice 
+ca points dar ce contine doar punctele respective, si NPCI, nr acestora. Facem o
+medie aritmetica si am gasit noii centrii.
+	Apoi printr-o bucla while mergem pana cand centroizii nu se vor mai modifica.
+
+
+# compute_cost_pc:
+	Pentru fiecare centroid, luam punctele ce apartin lui, si calculam distantele.
+	Intr-un final adunam cost-urile fiecarui centroid si acesta este rezultatul
+final.
