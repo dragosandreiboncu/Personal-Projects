@@ -1,6 +1,5 @@
 # initialize_clubs: 
-	Formam un dublu de tip FootballClub ce contine "clubs_no" casute in care
-adaugam numele respective.
+	Formam un dublu de tip FootballClub ce contine "clubs_no" casute in care adaugam numele respective.
 
 
 # add_club:
@@ -8,11 +7,9 @@ adaugam numele respective.
 
 
 # add_player:
-	La fel ca add_club doar ca adaugam o structura de tip Player, nu FootballClub.
--adaugarea se face direct sortat prin intermediul unui if ce cauta pozitie prin
-intermediul a 3 cazuri, cand pozitia e ordonata alfabetic, cand pozitie e egala
-si scorul este mai mare, si cand cele precedente sunt egale si numele e ordonat
-alfabetic.
+	La fel ca add_club doar ca adaugam o structura de tip Player, nu FootballClub.Aadaugarea se face direct sortat prin intermediul unui if ce cauta 
+pozitie prin intermediul a 3 cazuri, cand pozitia e ordonata alfabetic, cand pozitie e egala si scorul este mai mare, si cand cele precedente sunt egale 
+si numele e ordonat alfabetic.
 
 
 #transfer_player:
