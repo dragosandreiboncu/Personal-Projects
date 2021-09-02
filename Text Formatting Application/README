@@ -1,6 +1,3 @@
-	Programul realizeaza operatii pe text asemanatoare cu cele
-din Microsoft Word. Se primeste ca input un fisier .txt de unde
-se va prelua textul, un fisier .txt unde se va scrie textul dupa
-aplicarea operatiilor. Textul este plasat intr-o matrice de caractere
-unde se vor schimba pozitia caracterelor, inlocui caracterele etc. 
-Mai multe detalii despre implementare sunt prezentate in cod.
+	Programul realizeaza operatii pe text asemanatoare cu cele din Microsoft Word. Se primeste ca input un fisier .txt de unde se va prelua textul, 
+un fisier .txt unde se va scrie textul dupa aplicarea operatiilor. Textul este plasat intr-o matrice de caractere unde se vor schimba pozitia caracterelor, 
+inlocui caracterele etc. Mai multe detalii despre implementare sunt prezentate in cod.
