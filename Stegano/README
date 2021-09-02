@@ -1,0 +1,24 @@
+# solve_task1: 
+	Apelam functia bruteforce_singlebyte_xor. Facem o parcurgere
+pe linii si coloane, luam fiecare bit si il criptam. Daca am gasit litera t,
+verificam literele dinaintea lui. In caz ca toate se potrivesc, rezulta ca am 
+gasit cuvantul "revient" si retinem indexul liniei si valoarea cheii. Cheia
+pleaca de la 0. Daca dupa o parcurgere de matrice nu gasim cuvantul dorit, 
+cheia creste cu 1 si repetam.
+
+
+# solve_task2: 
+	Apelam functia de la taskul anterior pentru a primi cheia.
+Mergem in functia task2_function ce primeste o cheie si cripteaza orice
+pixel din matrice cu aceasta. Dupa aceea, pe indexul liniei + 1, primit
+de la functia bruteforce_singlebyte_xor, vom scrie propozitia din cerinta,
+peste pixelii din matrice. Aplicam noua formula pentru cheia de criptare si
+apelam functia task2_function din nou.
+
+
+# solve_task6: 
+	Functia blur va face o parcurgere pe matricea
+interioara imaginii, va lua fiecare pixel, impreuna cu vecinii lui de sus, jos,
+stanga, dreapta si va face o medie aritmetica cu ei. Rezultaltul va fi pus in
+stiva. Dupa calcule, pentru a respecta ordinea stivei, facem o parcurgere
+inversa a matricii si adaugam noile valori.

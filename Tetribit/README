@@ -1,0 +1,6 @@
+	Programul afiseaza mai multe harti de 8x8 caractere unde "#" reprezinta
+o bucata dintr-o piesa iar "." un spatiu liber. Hartile sunt determinate de fiecare
+miscare a unei piese si de durata jocului. Programul primeste ca input mai multe
+comenzi ce reprezinta numarul unei piese(ce va fi reprezentata pe biti) si mutarile
+acesteia pana la atingerea partii inferioare a hartii. Mai multe detalii despre
+implementare sunt prezentate in cod.

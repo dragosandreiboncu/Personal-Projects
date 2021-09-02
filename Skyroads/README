@@ -1,0 +1,11 @@
+	Joc 3D asemanator cu clasicul joc "SkyRoads". Jocul se 
+bazeaza pe elemente de grafica, coordonate ale punctelor 
+exprimate in vectori, operatii pe vectori, etc. Jucatorul este 
+reprezentat de o minge ce prezinta animatii in functie de gravitatie, 
+impactul cu platforme. Platformele ofera jucatorului efecte secundare(scade/creste 
+combustibilul, creste viteza considerabil si opreste accesul la schimbarea 
+vitezei, ofera/scade o viata jucatorului). De asemenea, pe platforme se pot 
+gasi obstacole si obiecte colectabile ce cresc/scad scorul. Totodata, 
+platformele, mingea, obiectele, obstacolele si fundalul prezinta texturi alcatuite
+din aranjarea unor puncte ale colturilor pe obiect. Jocul se termina cand jucatorul 
+ramane fara combustibil/pierde cele 3 vieti/atinge o platforma rosie.
