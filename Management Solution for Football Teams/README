@@ -8,7 +8,7 @@ adaugam numele respective.
 
 
 # add_player:
-	La fel ca add_club doar ca adaugam o structura de tip Player nu FootballClub.
+	La fel ca add_club doar ca adaugam o structura de tip Player, nu FootballClub.
 -adaugarea se face direct sortat prin intermediul unui if ce cauta pozitie prin
 intermediul a 3 cazuri, cand pozitia e ordonata alfabetic, cand pozitie e egala
 si scorul este mai mare, si cand cele precedente sunt egale si numele e ordonat
@@ -16,18 +16,15 @@ alfabetic.
 
 
 #transfer_player:
-	In mare parte ca si add_player doar ca adauga si la jucatori accidentati si
-in plus, realizeaza un remove_player.
+	In mare parte ca si add_player doar ca adauga si la jucatori accidentati si in plus, realizeaza un remove_player.
 
 
 # remove_player:
-	Cauta in ambele liste, players si injured_players si face eliminarea uzuala
-in lista.
+	Cauta in ambele liste, players si injured_players si face eliminarea uzuala in lista.
 
 
 # update_score:
-	Pentru a evita repozitionarea in lista, eliminam jucatorul si il adaugam cu
-scorul dat.
+	Pentru a evita repozitionarea in lista, eliminam jucatorul si il adaugam cu scorul dat.
 
 
 #update_game_position:
@@ -35,47 +32,38 @@ scorul dat.
 
 
 # add_injury:
-	Remove_player apoi add_player doar ca in lista jucatorilor accidentati.
-De asemenea recalculam scorul.
+	Remove_player apoi add_player doar ca in lista jucatorilor accidentati. De asemenea recalculam scorul.
 
 
 # recover_from_injury:
 	Remove_player apoi add_player.
 
 
-  Am adaugat 2 functii noi : add_player_in_list si add_player_in_list2 ce sunt
-asemanatoare cu add_player doar ca sorteaza intr-un alt mod, primeste ca
-argumente un head de lista, nu un club intreg, si sunt folositoare la 
-TeamExtractor.h.
+  Am adaugat 2 functii noi : add_player_in_list si add_player_in_list2 ce sunt asemanatoare cu add_player doar ca sorteaza intr-un alt mod, primeste ca
+argumente un head de lista, nu un club intreg, si sunt folositoare la TeamExtractor.h.
 
 
 # union_teams:
-	Se foloseste de functiile de mai jos si adauga toti playerii din cele 2 
-cluburi.
+	Se foloseste de functiile de mai jos si adauga toti playerii din cele 2 cluburi.
 
 
 # get_best_player:
-	Cu functiile de mai sus formeaza o lista ordonata in functie de scor cu
-jucatorii de pe pozitia X. Cum ne intereseaza doar primul, dezalocam lista
+	Cu functiile de mai sus formeaza o lista ordonata in functie de scor cu jucatorii de pe pozitia X. Cum ne intereseaza doar primul, dezalocam lista
 de la 2 in jos.
 
 
 # get_top_players:
-	Intai adauga in lista cei mai buni jucatori din fiecare club. Apoi, daca nu
-am atins nr cerut, din fiecare club scoatem pozitie urmatoare( al doilea, al
-treilea, etc) astfel, pentru fiecare club in parte:
+	Intai adauga in lista cei mai buni jucatori din fiecare club. Apoi, daca nu am atins nr cerut, din fiecare club scoatem pozitie urmatoare( al doilea,
+al treilea, etc) astfel, pentru fiecare club in parte:
 	Facem o tura a listei pt a determina scorul maxim;
 	Facem o a doua tura pt a cauta alti jucatori cu acelasi scor;
-	In caz ca nu am gasit si nici numarul nu l-am atins, scadem din scorul 
-  maxim;
-	Daca gasim un jucator cu scorul respectiv, cautam dupa un alt jucator cu 
-  acelasi scor dar nume mai mic din punct de vedere alfabetic;
+	In caz ca nu am gasit si nici numarul nu l-am atins, scadem din scorul maxim;
+	Daca gasim un jucator cu scorul respectiv, cautam dupa un alt jucator cu acelasi scor dar nume mai mic din punct de vedere alfabetic;
 	In caz ca tot nu am atins nr dorit, folosim functia Goto pt a ne rentoarce.
 
 
 # get_players_by_score:
-	La fel ca mai sus, ia toti jucatorii cu scorul mai mare decat argumentul
-si ii introduce in lista ordonati in functie de enuntul problemei.
+	La fel ca mai sus, ia toti jucatorii cu scorul mai mare decat argumentul si ii introduce in lista ordonati in functie de enuntul problemei.
 
 
 # get_players_by_position:
@@ -83,7 +71,5 @@ si ii introduce in lista ordonati in functie de enuntul problemei.
 
 
 # get_best_team:
-	Foloseste functia get_players_by_position pentru a scote toti jucatorii
-de pe toate 4 pozitiile, sortati in functie de scor intr-o lista. Pe noi
-ne intereseaza doar primii 1,4,3 respectiv 3 jucatori asadar dezalocam
-restul listelor.
+	Foloseste functia get_players_by_position pentru a scote toti jucatorii de pe toate 4 pozitiile, sortati in functie de scor intr-o lista. Pe noi
+ne intereseaza doar primii 1,4,3 respectiv 3 jucatori asadar dezalocam restul listelor.
