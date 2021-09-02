@@ -1,21 +1,15 @@
-	Avem 2 tabele: un route_table_entry si un arp_table_entry. Pentru ambele,
-vom citi din fisiere, cu cele 2 functii: read_route_table si read_arp_table,
-informatii despre prefix, masca, adresa urmatorului pas etc, respectiv ip-ul si
-adresele mac.
+	Avem 2 tabele: un route_table_entry si un arp_table_entry. Pentru ambele, vom citi din fisiere, cu cele 2 functii: read_route_table si 
+read_arp_table, informatii despre prefix, masca, adresa urmatorului pas etc, respectiv ip-ul si adresele mac.
 
 
-	Pentru o complexitate mai eficienta de cautare in tabela de rutare, vom sorta adresele
-din route_table in functie de prefix/masca iar cautarea ip-ului destinatie se va realiza 
-cu o cautare binara in get_best_route.
+	Pentru o complexitate mai eficienta de cautare in tabela de rutare, vom sorta adresele din route_table in functie de prefix/masca iar 
+cautarea ip-ului destinatie se va realiza cu o cautare binara in get_best_route.
 
 
-	Cat despre dirijare, informatiile sunt asemanatoare cu cele de la laborator, programul
-primeste un pachet, ii prelucreaza payloadul intr-un ether-header, apoi citeste tipul acestui
-ether: daca este ARP sau daca este IP.
+	Cat despre dirijare, informatiile sunt asemanatoare cu cele de la laborator, programul primeste un pachet, ii prelucreaza payloadul intr-un 
+ether-header, apoi citeste tipul acestui ether: daca este ARP sau daca este IP.
 
 
-	In cazul in care este IP vom verifica checksum-ul, ttl-ul, decrementarea ttl-ului, 
-cautarea celei mai bune rute pentru ip-ul destinatie, astfel incat masca sa fie cea mai mare
-(tabela fiind sortata in functie de marimea mastii), cautatea in tabela arp a adresei mac
-caracterizata de adresa IP a pasului urmator din dirijare(best->next_hop), apoi trimiterea
-mesajului.
+	In cazul in care este IP vom verifica checksum-ul, ttl-ul, decrementarea ttl-ului, cautarea celei mai bune rute pentru ip-ul destinatie, 
+astfel incat masca sa fie cea mai mare (tabela fiind sortata in functie de marimea mastii), cautatea in tabela arp a adresei mac caracterizata de 
+adresa IP a pasului urmator din dirijare(best->next_hop), apoi trimiterea mesajului.
