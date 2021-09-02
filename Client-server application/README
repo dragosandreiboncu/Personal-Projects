@@ -1,17 +1,12 @@
 	O aplicatie ce se bazeaza pe receptionarea mesajelor de la UDP si comunicarea cu userii TCP.
 
 
-# TCP: Se accepta fiecare utilizator si se baga intr-o tabela de structuri de tip
-Subscriber. Acesta contine ID-ul si o lista cu preferintele. De asemenea am implementat 3
-functii utile pentru functii: contain, add si delete. Pentru fiecare user afisam un mesaj
-de tip "Clientul x s-a conectat la server". Vectorul visited v-a retine daca am afisat acest
-lucru. ID-ul este primit ca mesaj la inceput si introdus in tabela. Pe parcurs, daca
-clientul TCP doreste sa transmita un mesaj se va verifica daca este o comanda: exit, subcribe
-sau unsubscribe. Pentru comenziile de (un)subscribe se adauga/sterge in lista fiecarui user.
-Pe server se va afisa un mesaj ce afiseaza fiecare user ce a folosit una din cele 3 comenzi, si
-pe clientul fiecarui subscriber, de asemenea.
+# TCP: Se accepta fiecare utilizator si se baga intr-o tabela de structuri de tip Subscriber. Acesta contine ID-ul si o lista cu preferintele. De asemenea 
+am implementat 3 functii utile pentru functii: contain, add si delete. Pentru fiecare user afisam un mesaj de tip "Clientul x s-a conectat la server". 
+Vectorul visited v-a retine daca am afisat acest lucru. ID-ul este primit ca mesaj la inceput si introdus in tabela. Pe parcurs, daca clientul TCP doreste 
+sa transmita un mesaj se va verifica daca este o comanda: exit, subcribe sau unsubscribe. Pentru comenziile de (un)subscribe se adauga/sterge in lista fiecarui 
+user. Pe server se va afisa un mesaj ce afiseaza fiecare user ce a folosit una din cele 3 comenzi, si pe clientul fiecarui subscriber, de asemenea.
 
 
-# UDP: Avem structura UDP_message ce retine: topicul, tipul de data folosit, si
-continutul propriu-zis. Mai departe avem 4 cazuri pentru afisarea continutului, in functie de
-tipul de data si printat catre fiecare user ce are topicul mesajului respectiv la preferinte.
+# UDP: Avem structura UDP_message ce retine: topicul, tipul de data folosit, si continutul propriu-zis. Mai departe avem 4 cazuri pentru afisarea 
+continutului, in functie de tipul de data si printat catre fiecare user ce are topicul mesajului respectiv la preferinte.
