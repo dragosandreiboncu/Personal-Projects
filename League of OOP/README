@@ -1,0 +1,7 @@
+	Aplicatia presupune implementarea gameplay-ului propriu-zis a unui job de tip MOBA.
+Jocul prezinta 4 tipuri de razboinici ce prezinta 2 abilitati personale. In joc se
+presupune exista unei harti de diferite dimensiuni cu puncte ce reprezinta arenele de lupta.
+Cand 2 caractere se afla in aceeasi arena, ambele se ataca intre ele cu abilitati. Se calculeaza
+damage-ul dat prin intermediul unor atribute oferite(viata maxima a inamicului, damage-ul dat de abilitatea
+inamicului, etc.) si se determina unul sau nici un castigator, urmand ca acesta sa-si continue drumul pe harta
+in cautarea altor lupte.
