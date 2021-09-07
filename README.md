@@ -1,5 +1,5 @@
 # Personal-Projects
-    Bow and Arrow | C++
+    Bow and Arrow | OpenGL using C++
 
     Cars Game | Unity Engine and C# scripts
 
@@ -21,7 +21,7 @@
 
     Router Implementation | C
 
-    Skyroads | C++
+    Skyroads | OpenGL using C++
 
     Stegano | Assembly (x86)
 
