@@ -1,4 +1,3 @@
-	Aplicatia reprezinta un joc asemanator cu celebrul "Flappy Bird"
-Jocul plaseaza pe ecran o pasare formata din mai multe forme geometrice si niste tuburi de dimensiune random pe unde
-jucatorul trebuie sa treaca. Se calculeaza coliziunile cu aceste tuburi si cu limitele ecranului si pentru pierderea jocului. In rest se adauga scor incontinuu
-pentru fiecare tub depasit. Jocul este bazat pe functionale in Racket.
+	Aplicatia reprezinta un joc asemanator cu celebrul "Flappy Bird". Jocul plaseaza pe ecran o pasare formata din mai multe forme geometrice si niste 
+tuburi de dimensiune random pe unde jucatorul trebuie sa treaca. Se calculeaza coliziunile cu aceste tuburi si cu limitele ecranului si pentru pierderea jocului. 
+In rest se adauga scor incontinuu pentru fiecare tub depasit. Jocul este bazat pe functionale in Racket.
