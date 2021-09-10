@@ -1,6 +1,6 @@
 # Personal-Projects
-    Bow and Arrow | OpenGL using C++
-    Cars Game | Unity Engine and C# scripts
+    Bow and Arrow | OpenGL / C++
+    Cars Game | Unity Engine / C# scripts
     Client-server application | C
     Clusters | Octave
     Communication with REST API | C
@@ -10,7 +10,7 @@
     Management Solution for Football Teams | C
     Multithreaded Producers-Consumers Problem | Python
     Router Implementation | C
-    Skyroads | OpenGL using C++
+    Skyroads | OpenGL / C++
     Stegano | Assembly (x86)
     Tetribit | C
     Text Formatting Application | C
