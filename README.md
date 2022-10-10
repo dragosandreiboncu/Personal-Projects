@@ -1,6 +1,6 @@
 # Personal-Projects
     Bow and Arrow | OpenGL / C++
-    Cars Game | Unity Engine / C# scripts
+    Racing For Real 2D | Unity Engine / C# scripts
     Client-server application | C
     Clusters | Octave
     Communication with REST API | C
