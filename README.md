@@ -1,6 +1,8 @@
 # Personal-Projects
     Bow and Arrow | OpenGL / C++
     Racing For Real 2D | Unity Engine / C# scripts
+    Escape Elrond | Unity Engine / C# scripts
+    Catch This! | Unity Engine / C# scripts
     Client-server application | C
     Clusters | Octave
     Communication with REST API | C
