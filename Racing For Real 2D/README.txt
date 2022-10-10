@@ -1,0 +1,7 @@
+Joc 2D cu masini de curse.
+Video cu prezentarea jocului, versiunea 2020 (prototip): 
+	https://www.youtube.com/watch?v=i2A1nKaq4K8&ab_channel=Dragos-AndreiBoncu
+Video cu prezentarea jocului, versiunea 2022:
+	https://www.youtube.com/watch?v=TbwTLorOAcg&ab_channel=Drago%C8%99-AndreiBoncu
+Pentru jocul in forma de executabil(Windows 64-bit), versiunea 2022:
+	https://drive.google.com/file/d/1Q0k5XkazYBw3jOJxKP_C_X4e8-IkYZ-g/view?usp=sharing
