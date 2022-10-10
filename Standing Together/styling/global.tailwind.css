@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.big-text {
+    @apply text-4xl;
+}
+
+.user-menu {
+    @apply px-2;
+  }
+  
+.details-container {
+    @apply bottom-0;
+}
+
+.left-green-background {
+    @apply w-[9.5rem] h-screen bg-green-layout1;
+}
+
+
+.left-menu {
+    @apply absolute inset-y-0 left-2;
+}
+
+.bottom-info {
+    @apply absolute bottom-4 flex flex-col space-y-2;
+}
+
+.sign-out {
+    @apply text-base font-normal text-white;
+}
+
+.name-info {
+    @apply text-2xl text-white font-semibold;
+}
+
+.admin-name-info {
+    @apply text-2xl text-white font-bold
+}
+
+.normal-page {
+    @apply absolute inset-y-0 top-2 left-52 w-16 flex flex-col space-y-8;
+}
+
+.row-between1 {
+    @apply flex items-center justify-between gap-80;
+}
+
+.row-between2 {
+    @apply flex items-center justify-between gap-1;
+}
+
+.row-between3 {
+    @apply flex items-center justify-between;
+}
+
+.title-background {
+    @apply absolute bg-green-table;
+}
+
+.table-background {
+    @apply bg-gray-table;
+}
+
+.address-background {
+    @apply bg-green-address;
+}
+
+
+
+/* table */
+
+table {
+    @apply border-2 border-collapse border-none rounded-md border-purple-faded;
+    box-shadow: 0 0 0 1px #00000000;
+    /* this draws the table border   */
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+th,
+td {
+    @apply p-6 text-lg font-semibold text-left;
+}
+
+th {
+    @apply font-bold opacity-100;
+}
+
+tr1 {
+    @apply w-full border cursor-pointer border-black flex flex-row space-x-28;
+}
+tr2 {
+    @apply w-full border cursor-pointer border-black flex flex-row space-x-[44.4rem];
+}
+
+thead>tr {
+    @apply cursor-default;
+}
+
+
+/* button */
+
+.button {
+    @apply flex w-fit items-center justify-center px-4 py-1 text-lg font-semibold text-white rounded-full bg-green-buttons;
+}
+
+
+
+/* inputs */
+
+label {
+    @apply font-semibold text-sm;
+}
+
+.input {
+    @apply w-full px-4 py-3 rounded-lg bg-none text-black font-semibold;
+}
+
+.input:focus {
+    @apply bg-gray-table;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+/* modal */
+
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+    @apply flex justify-center items-center bg-gray-background !important;
+}
+
+.modal {
+    @apply w-[465px] px-16 py-10 bg-white rounded-md;
+}
+
+.modal form {
+    @apply flex flex-col gap-5;
+}
+
+.modal .line {
+    @apply h-[1px] bg-black my-7 opacity-10 rounded-md;
+}
+
+.modal>form>button {
+    @apply mt-5 bg-green-buttons;
+}
+
+.row-center {
+    @apply flex flex-row items-center justify-center gap-3;
+}
+
+.delete-button {
+    @apply bg-red;
+}
+
+
+/* special info section */
+
+.section-container {
+    @apply bg-gray-table font-semibold text-lg flex flex-col gap-5 w-auto m-[1px];
+}
+
+.section-title {
+    @apply text-4xl font-bold;
+}
+
+.section-container .fields {
+    @apply rounded-md p-6 text-2xl;
+    box-shadow: 0px 4px 6px rgba(0.5, 0.5, 0.5, 0.75);
+    display: grid;
+    column-gap: 640px;
+    row-gap: 60px;
+    grid-template-columns: max-content max-content;
+    width: max-content;
+}
+
+/* layout */
+
+.layout {
+    @apply flex w-screen h-screen;
+}
+
+.content {
+    @apply flex flex-col px-10 overflow-y-auto gap-7 py-7;
+    width: calc(100vw - 15.625rem);
+}
+
+.admin-menu {
+    @apply w-[15.625rem] h-screen bg-purple-faded flex flex-col items-center gap-24;
+}
+
+
+
+/* navigation */
+
+
+/* header */
+
+.header {
+    @apply flex flex-row-reverse w-full;
+}
+
+.profile-container {
+    @apply flex gap-4;
+}
+
+.profile-info {
+    @apply flex flex-col items-end justify-center font-semibold;
+}
+
+.profile-info>p {
+    @apply text-lg font-bold;
+}
+
+.profile-info>a {
+    @apply underline text-purple-secondary;
+}
+
+
+/* customs */
+
+.row-between {
+    @apply flex items-center justify-between;
+}
+
+.analytic-section {
+    @apply w-[250px] mt-12;
+}
+
+.graph {
+    @apply mt-12 h-[250px];
+}
+
